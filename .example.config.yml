@@ -1,0 +1,18 @@
+uvicorn:
+  ip: "0.0.0.0"
+  port: 8000
+  log_level: "info"
+  enable_auto_reload: true
+
+logger:
+  file_path: "./app.log"
+  format: "{time} | {level} | {name}:{function}:{line} | {message}"
+  rotation: "50 MB"
+  enqueue: false
+  serialize: false
+  level: "INFO"
+
+llm:
+  model: "gpt-5-mini"
+  temperature: 0
+  timeout: 30

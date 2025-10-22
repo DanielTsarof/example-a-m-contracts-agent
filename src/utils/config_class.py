@@ -28,6 +28,13 @@ class Uvicorn(BaseModel):
     enable_auto_reload: bool = True
 
 
+class LLM(BaseModel):
+    model: str
+    temperature: float = 0.0
+    timeout: float = 30.0
+
+
 class Config(BaseModel):
     uvicorn: Uvicorn
     logger: Logger
+    llm: LLM
