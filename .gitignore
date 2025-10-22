@@ -12,3 +12,4 @@ wheels/
 .env
 config.yml
 uv.lock
+*.log

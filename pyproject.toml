@@ -9,4 +9,5 @@ dependencies = [
     "langchain-openai>=1.0.0",
     "langgraph>=1.0.0",
     "langgraph-cli[inmem]>=0.4.4",
+    "loguru>=0.7.3",
 ]
